@@ -48,30 +48,30 @@ class ChatBot : TelegramLongPollingBot() {
         val response = SendMessage()
         response.setChatId(message.chatId)
         response.text = "Gern geschehen. Wenn du weitere Fragen hast, kannst du dich gerne jedereit an mich wenden."
-        sendMessage(response)
+        execute(response)
     }
 
     fun neueRechnung(message: Message) {
         val response = SendMessage()
         response.setChatId(message.chatId)
         response.text = "Okay, du hast eine neue Rechnung für mich. Bitte mache ein Foto von der Rechnung und schicke es mir."
-        sendMessage(response)
+        execute(response)
     }
 
     fun neueRechnung(message: Message, photo: List<PhotoSize>) {
         val response = SendMessage()
         response.setChatId(message.chatId)
         response.text = "Vielen Dank, ich habe dein Foto von der Rechnung bekommen. Ich werden sie bearbeiten und mich wieder bei dir melden!"
-        sendMessage(response)
+        execute(response)
     }
 
     fun sendStatus(message: Message) {
         val response = SendMessage()
         response.setChatId(message.chatId)
         response.text = "Für deine vorletzte Rechnung 7364764736 vom 23. Juli 2017 habe ich dir am 3. August 2017 CHF 144.30 erstattet und auf dein Konto überwiesen."
-        sendMessage(response)
+        execute(response)
         response.text = "Deine letzte Rechnung 8364529401 vom 21. August 2017 wird von mir gerade bearbeitet, bitte habe noch etwas Geduld."
-        sendMessage(response)
+        execute(response)
     }
 
     fun sendHelp(message: Message) {
@@ -80,7 +80,7 @@ class ChatBot : TelegramLongPollingBot() {
         val response = SendMessage()
         response.setChatId(message.chatId)
         response.text = "Hallo ${firstName}, was kann ich für dich tun? Möchtest du mir eine neue Rechnung schicken oder den Status deiner aktuellen Rechnungen wissen?"
-        sendMessage(response)
+        execute(response)
     }
 
 }
