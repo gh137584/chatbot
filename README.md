@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/css-ch/chatbot.svg?branch=master)](https://travis-ci.org/css-ch/chatbot) [![Stories in Ready](https://badge.waffle.io/css-ch/chatbot.png?label=ready&title=ready)](http://waffle.io/css-ch/chatbot) [![gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg)](https://gitmoji.carloscuesta.me)
 
-**A demo of simple chat bot using the Telegram API.**
+**A demo of a simple chat bot using the Telegram API.**
 
 *Copyright (C) 2017 Marcus Fihlon*
 
