@@ -1,0 +1,49 @@
+/*
+ * ChatBot – A demo of simple chat bot using the Telegram API.
+ * Copyright (C) 2017 Marcus Fihlon
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    }
+}
+
+group 'ch.fihlon.telegram'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'kotlin'
+apply plugin: 'application'
+
+mainClassName = 'ch.css.demo.chatbot.MainKt'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    compile(
+            "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
+            "org.telegram:telegrambots:$telegrambotsVersion"
+    )
+}
